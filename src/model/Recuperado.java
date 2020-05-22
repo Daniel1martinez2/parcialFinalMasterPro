@@ -4,8 +4,8 @@ import processing.core.PApplet;
 
 public class Recuperado extends Persona{
 
-	public Recuperado(PApplet app) {
-		super(app);
+	public Recuperado(PApplet app, int pos, int posy) {
+		super(app, posy, posy);
 		// TODO Auto-generated constructor stub
 	}
 

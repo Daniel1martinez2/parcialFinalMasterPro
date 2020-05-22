@@ -4,8 +4,8 @@ import processing.core.PApplet;
 
 public class Infectado extends Persona{
 
-	public Infectado(PApplet app) {
-		super(app);
+	public Infectado(PApplet app, int posx, int posy) {
+		super(app, posy, posy);
 		// TODO Auto-generated constructor stub
 	}
 

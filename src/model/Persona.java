@@ -6,14 +6,16 @@ public abstract class Persona implements Runnable , Comparable<Persona> {
 
 	protected PApplet app; 
 	protected int posx, posy, r, g, b, estado, dirx, diry; 
-	public Persona(PApplet app) {
+	public Persona(PApplet app, int posx, int posy) {
 
 		this.app= app; 
-		posx = (int)app.random(100,450); 
-		posy = (int)app.random(100,450); ; 
+		this.posx =posx ; 
+		this.posy = posy;  
 		dirx = 1; 
 		diry= 1; 
 		
+		
+	
 	}
 	public abstract void pintar(); 
 	

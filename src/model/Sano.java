@@ -4,8 +4,8 @@ import processing.core.PApplet;
 
 public class Sano extends Persona{
 
-	public Sano(PApplet app) {
-		super(app);
+	public Sano(PApplet app, int posx, int posy) {
+		super(app, posx, posy);
 		// TODO Auto-generated constructor stub
 	}
 
