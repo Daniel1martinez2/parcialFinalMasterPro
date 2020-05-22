@@ -2,15 +2,15 @@ package model;
 
 import processing.core.PApplet;
 
-public abstract class Persona {
+public abstract class Persona implements Runnable , Comparable<Persona> {
 
 	protected PApplet app; 
 	protected int posx, posy, r, g, b, estado, dirx, diry; 
 	public Persona(PApplet app) {
 
 		this.app= app; 
-		posx = 100; 
-		posy = 100; 
+		posx = (int)app.random(100,450); 
+		posy = (int)app.random(100,450); ; 
 		dirx = 1; 
 		diry= 1; 
 		
@@ -18,8 +18,9 @@ public abstract class Persona {
 	public abstract void pintar(); 
 	
 	public void mover() {
-		posx+= posx*dirx;
-		posy+= posy*diry; 
+		posx += 1*dirx; 
+		posy+= 1*diry;
+		
 		
 		if(posx<0 ||posx>app.width) {
 			dirx*=-1; 
