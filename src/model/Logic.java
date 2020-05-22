@@ -91,10 +91,12 @@ public void setupmod() {
 			app.fill(255); 
 			app.stroke(255);
 			app.line(persona.posx, persona.posy, persona2.posx, persona2.posy);
-			//personas.add(new Infectado(app,persona2.posx, persona2.posy ));
-		     infectados++;
+		 
 		     personas.add(new Infectado(app, persona2.posx, persona2.posy)); 
 		     personas.remove(persona2); 
+		     System.out.println(personas.size());
+		     sanos--; 
+		     infectados++; 
 		}
 		
 	}
@@ -103,6 +105,7 @@ public void setupmod() {
 		case 'n':
 			Collections.sort(personas);
 			System.out.println("orderno natural");
+			
 			for (Persona f : personas) {
 				System.out.println("odeno");
 				
